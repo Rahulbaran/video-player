@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier-scss"
+  ],
+
+  "rules": {
+    "color-named": null,
+    "color-no-hex": true,
+    "declaration-colon-space-after": "always",
+    "string-quotes": "double",
+    "block-no-empty": true,
+    "no-extra-semicolons": true,
+    "selector-class-pattern": null,
+    "property-no-vendor-prefix": null
+  },
+  "ignoreFiles": ["dist/**/*.css", "node_modules/**/**/*.css"]
+}

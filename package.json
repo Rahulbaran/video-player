@@ -1,0 +1,53 @@
+{
+  "name": "video-player",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "author": {
+    "name": "Rahul Kumar",
+    "email": "rahulkumar109422@gmail.com"
+  },
+  "license": "MIT",
+  "prettier": {
+    "arrowParens": "avoid",
+    "endOfLine": "auto",
+    "singleQuote": false,
+    "trailingComma": "none",
+    "useTabs": false,
+    "semi": true
+  },
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 edge version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.25%",
+      "not dead",
+      "not op_mini all",
+      "not IE 11"
+    ]
+  },
+  "scripts": {
+    "start": "vite serve",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^3.0.1",
+    "autoprefixer": "^10.4.13",
+    "eslint": "8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "postcss-preset-env": "^7.8.3",
+    "prettier": "2.8.1",
+    "sass": "^1.57.1",
+    "stylelint": "14.16.1",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-standard-scss": "^6.1.0",
+    "terser": "^5.16.1",
+    "vite": "^4.0.0"
+  }
+}
