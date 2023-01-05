@@ -33,7 +33,9 @@
   "scripts": {
     "start": "vite serve",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint src/**/*.js && stylelint src/**/*.scss",
+    "lint-fix": "eslint --fix src/**/*.js && stylelint --fix src/**/*.scss"
   },
   "devDependencies": {
     "@vitejs/plugin-legacy": "^3.0.1",
