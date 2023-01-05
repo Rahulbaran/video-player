@@ -5,14 +5,18 @@
   ],
 
   "rules": {
-    "color-named": null,
+    "color-named": "never",
+    "alpha-value-notation": "number",
     "color-no-hex": true,
     "declaration-colon-space-after": "always",
     "string-quotes": "double",
     "block-no-empty": true,
     "no-extra-semicolons": true,
     "selector-class-pattern": null,
-    "property-no-vendor-prefix": null
+    "property-no-vendor-prefix": null,
+    "function-name-case": "lower",
+    "function-disallowed-list": ["rgba", "rgb"],
+    "hue-degree-notation": null
   },
   "ignoreFiles": ["dist/**/*.css", "node_modules/**/**/*.css"]
 }
