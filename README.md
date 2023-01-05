@@ -1,2 +1,3 @@
 # video-player
-Custom video player created using JavaScript
+
+- A custom video player created using JavaScript
