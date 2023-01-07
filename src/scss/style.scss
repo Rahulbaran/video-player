@@ -56,7 +56,7 @@ html {
 
   /* COLORS */
   --body-bg: hwb(260 70% 0%);
-  --video-controls-bg: hwb(260 50% 90% / 0.2);
+  --video-controls-bg: hwb(260 50% 90% / 0.35);
   --range-track-bg: hwb(260 80% 10%);
   --range-thumb-bg: hwb(260 60% 0%);
   --btn-icon: hwb(260 75% 10%);
@@ -204,8 +204,18 @@ input[type="range"] {
   place-items: center;
   container: video-container / inline-size;
 
+  &::backdrop {
+    background-image: linear-gradient(
+      to top left,
+      hwb(70 40% 0%),
+      hwb(100 30% 0%)
+    );
+  }
+
   > video {
     width: 90cqw;
+    box-shadow: 0 0 5px hwb(0 0% 100% / 0.75);
+    border-radius: calc(var(--base-br) * 0.15);
   }
 
   .video-controls-wrapper {
@@ -272,6 +282,7 @@ input[type="range"] {
   @container video-container (width > 992px) {
     & > video {
       width: 65cqw;
+      max-height: 100cqh;
     }
 
     & .video-controls-wrapper {
